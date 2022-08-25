@@ -38,7 +38,7 @@ int main(void){
     printf("*****************************\n%s \nWritten by: %s \nDate: %s\n*****************************\n", TITLE, AUTHOR, YEAR);
     
     while(dec_in>=0){      //Creating a loop to allow the code to repeat as long as the user enters a positive number
-        printf("Enter a decimal number: ");
+        printf("Enter a positive decimal number: ");
         scanf("%d", &dec_in);   //receiving the decimal input from the user
         double log_dec=log2(dec_in);
 
