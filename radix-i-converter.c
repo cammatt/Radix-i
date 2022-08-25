@@ -51,6 +51,7 @@ int main(void){
         printf("The log2 of the number is %.2f\n", log_dec);
         printf("The integer result of the number divided by %d is %d\n", radix, (dec_in/radix));
         printf("The remainder is %d\n", (dec_in%radix));
+        printf("The radix-%d value is: ", radix);
         Dec2RadixI(dec_in, radix);      //running the Dec2RadixI function
         }
         else if(radix<0){       //if radix is<0, the user exits
@@ -66,4 +67,3 @@ int main(void){
     }
     return 0;
 }
-
