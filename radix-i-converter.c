@@ -9,7 +9,11 @@ void Dec2RadixI(int dec_in, int radix){
 
     int no_of_digits = floor((log(dec_in))/(log(radix)));       //the number of digits in the converted value is actually ceil(log(base radix)(dec_in)) but since we have the code to start its count at 0 and the value is used to find the max value less that the dec_in value, we rounded down. Used log laws to get log(base radix)(dec_in)
     int i;
-
+    
+    if(dec_in==0){
+        printf("0");
+    };
+    
     for(i=0; i<=no_of_digits; i++){     //iterating for each digit in the radix converted number
 
         int max_value = pow(radix, no_of_digits-i);     //max value when the radix is raised to the power of the ith digit considered (read from the LHS)
